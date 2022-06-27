@@ -31,7 +31,7 @@ void Display(struct Node *ptr)
 }
 int main()
 {
-    struct Node *N1;
+    struct Node *N1;                                               // creating Nodes
     struct Node *N2;
     struct Node *N3;
     struct Node *N4;
@@ -41,7 +41,7 @@ int main()
     N3 = (struct Node *)malloc(sizeof(struct Node));
     N4 = (struct Node *)malloc(sizeof(struct Node));
 
-    N1->data = 1;
+    N1->data = 1;                                             // initializing values for the Nodes
     N1->prev = NULL;
     N1->next = N2;
 
@@ -58,6 +58,10 @@ int main()
     N4->next = NULL;
 
     Display(N1);
+     Display(N2);
+     Display(N3);
+     Display(N4);
+    
 
     return 0;
 }
